@@ -1,0 +1,74 @@
+.blogPostContainer{
+    width: 70%;
+}
+.blogHeader{
+    text-align: center;
+}
+.postCategory{
+    padding: 10px 0;
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+.postTitle{
+    margin: 0;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.postedBy{
+    font-size: 15px;
+    font-style: italic;
+    color: #565675;
+    margin: 10px 0;
+    display: block;
+}
+.postImageContainer{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.postImageContainer img{
+    width: 100%;
+    height: 100%;
+}
+.postContent{
+    padding: 10px;
+}
+.postContent h2{
+    font-weight: 500;
+    color: #333;
+    padding: 2px 5px;
+    margin: 0;
+    border-left: 4px solid #a1b005;
+    display: inline-block;
+    background: #f8ffb3;
+}
+.postContent p{
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #555;
+    font-weight: 400;
+    text-align: justify;
+}
+.socialMedia{
+    text-align: center;
+    padding: 50px;
+}
+.socialMedia a{
+    margin: 0 15px;
+    background: #333;
+    color: #fff;
+    font-size: 20px;
+    padding: 6px 10px;
+    border-radius: 50%;
+    transition: all .1s ease-in;
+}
+.socialMedia a:hover{
+    padding: 10px 14px;
+    margin: 0 11px;
+}

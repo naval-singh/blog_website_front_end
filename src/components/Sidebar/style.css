@@ -1,0 +1,78 @@
+.sidebarContainer{
+    width: 28%;
+}
+.cardHeader{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #565675;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px 0;
+}
+.profileImageContainer{
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.profileImageContainer img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.personalBio{
+    padding: 20px;
+}
+.personalBio p{
+    margin: 0;
+    color: #666666;
+    letter-spacing: .2px;
+    text-align: justify;
+    font-size: 14px;
+}
+.socialIcons{
+    text-align: center;
+    padding: 20px 0;
+}
+.socialIcons a{
+    background: #53a2d5;
+    color: #fff;
+    margin: 5px;
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.recentPosts{
+    padding: 10px 20px;
+}
+.recentPost{
+    border-bottom: 1px dotted #ccc;
+    margin-bottom: 15px;
+}
+.recentPost h3{
+    font-size: 15px;
+    font-weight: bold;
+    color: #565675;
+    margin: 0;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+}
+.recentPost h3:hover{
+    color: #5f9ea0;
+}
+.postedOn{
+    display: flex;
+    margin: 10px 0;
+}
+.postedOn img{
+    width: 12px;
+    height: 12px;
+}
+.postedOn span{
+    font-size: 10px;
+    color: #bbb;
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    padding-left: 3px;
+}
