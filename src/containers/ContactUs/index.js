@@ -2,6 +2,7 @@ import React from 'react';
 import Card from '../../components/UI/Card';
 import Sidebar from '../../components/Sidebar';
 import './style.css';
+import Layout from '../../components/Layout';
 
 /**
 * @author
@@ -10,7 +11,7 @@ import './style.css';
 
 const ContactUs = (props) => {
     return (
-        <section className='contactContainer'>
+        <Layout>
             <div style={{ width: '70%' }}>
                 <Card>
                     <div className='contactContent'>
@@ -24,8 +25,7 @@ const ContactUs = (props) => {
                     </div>
                 </Card>
             </div>
-            <Sidebar />
-        </section>
+        </Layout>
     )
 }
 

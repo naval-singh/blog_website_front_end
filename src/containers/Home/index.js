@@ -4,6 +4,7 @@ import ImageGallary from './ImageGallary';
 import Sidebar from '../../components/Sidebar';
 import postBlog from '../../data.json';
 import './style.css';
+import Layout from '../../components/Layout';
 
 /**
 * @author
@@ -35,10 +36,9 @@ const Home = (props) => {
                 ids={ids}
                 categories={categories}
             />
-            <section className='homeContainer'>
+            <Layout>
                 <RecentPosts />
-                <Sidebar />
-            </section>
+            </Layout>
         </div>
     )
 }
