@@ -56,7 +56,7 @@ const Sidebar = (props) => {
                         posts.map(post => {
                             return (
                                 <div className='recentPost' key={post.id}>
-                                    <Link to={`/post/${post.id}`} style={{ textDecoration: 'none' }}>
+                                    <Link to={`/post/${post.slug}`} style={{ textDecoration: 'none' }}>
                                         <h3>{post.blogTitle}</h3>
                                     </Link>
                                     <div className='postedOn'>

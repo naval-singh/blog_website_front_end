@@ -1,6 +1,6 @@
 import React from 'react';
+import Layout from '../../components/Layout';
 import BlogPost from '../../components/BlogPost';
-import Sidebar from '../../components/Sidebar';
 import './style.css';
 
 /**
@@ -10,11 +10,10 @@ import './style.css';
 
 const Posts = (props) => {
     return (
-        <section className='container'>
+        <Layout sidebar>
             <BlogPost {...props} />
-            <Sidebar />
-        </section>
+        </Layout>
     )
 }
 
-export default Posts
+export default Posts;

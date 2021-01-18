@@ -13,7 +13,6 @@ const Navbar = (props) => {
     const [search, setSearch] = useState(false);
     const handleSearch = (e) => {
         e.preventDefault();
-        alert('search ad')
     }
     const openSearch = () => {
         setSearch(true)
@@ -24,8 +23,7 @@ const Navbar = (props) => {
         <div className='navbar'>
             <ul>
                 <li><NavLink to='/'>Home</NavLink></li>
-                <li><NavLink to='/post'>Posts</NavLink></li>
-                <li><NavLink to='/features'>Features</NavLink></li>
+                <li><NavLink to='/categories'>Categories</NavLink></li>
                 <li><NavLink to='/signin'>Sign In</NavLink></li>
                 <li><NavLink to='/signup'>Sign Up</NavLink></li>
             </ul>

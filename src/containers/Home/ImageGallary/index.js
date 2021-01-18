@@ -9,7 +9,7 @@ import './style.css';
 **/
 
 const PreviewImage = (props) => {
-    const { height, src, alt, title, category, id } = props;
+    const { height, src, alt, title, category, slug } = props;
     return (
         <>
             <div className='gallaryImageContainer' style={{ height: `${height}px` }}>
@@ -19,7 +19,7 @@ const PreviewImage = (props) => {
                         <span>{category}</span>
                         <Link
                             style={{ textDecoration: 'none', color: '#fff' }}
-                            to={`/post/${id}`}
+                            to={`/post/${slug}`}
                         >{title}
                         </Link>
                     </h3>
@@ -37,7 +37,7 @@ const ImageGallary = (props) => {
         smallWidth,
         images,
         titles,
-        ids,
+        slugs,
         categories
     } = props;
 
@@ -52,7 +52,7 @@ const ImageGallary = (props) => {
                 height={gallaryHeight}
                 src={require(`../../../assets/post images/${images[3]}`).default}
                 alt={''}
-                id={ids[3]}
+                slug={slugs[3]}
                 title={titles[3]}
                 category={categories[3]}
                 style={{ bottom: 30, fontSize: 24 }}
@@ -67,7 +67,7 @@ const ImageGallary = (props) => {
                 height={sideImageHeight}
                 src={require(`../../../assets/post images/${images[i]}`).default}
                 alt={''}
-                id={ids[i]}
+                slug={slugs[i]}
                 title={titles[i]}
                 category={categories[i]}
                 style={{ bottom: 15, fontSize: 15 }}

@@ -30,11 +30,11 @@ const BlogPost = (props) => {
         blogText: ''
     });
     useEffect(() => {
-        const postId = props.match.params.postId;
-        const post = blogPost.data.find(post => post.id === postId)
+        const slug = props.match.params.slug;
+        const post = blogPost.data.find(post => post.slug === slug)
         setPost(post);
         window.scrollTo(0, 250);
-    }, [post, props.match.params.postId])
+    }, [post, props.match.params.slug])
 
     if (post.blogImage === '') return null;
 

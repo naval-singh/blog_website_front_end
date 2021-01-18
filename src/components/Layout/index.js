@@ -1,4 +1,6 @@
 import React from 'react';
+import Hero from '../Hero';
+import Header from '../Header';
 import Sidebar from '../Sidebar';
 import './style.css';
 
@@ -9,10 +11,16 @@ import './style.css';
 
 const Layout = (props) => {
     return (
-        <div className='container'>
-            {props.children}
-            <Sidebar />
-        </div>
+        <>
+            <Header />
+            <Hero />
+            { props.gallary && <div>{props.gallary}</div>}
+            <div className='container'>
+                {props.children}
+                {props.sidebar && <Sidebar />}
+            </div>
+        </>
+
     )
 }
 

@@ -24,7 +24,7 @@ const RecentPosts = (props) => {
                             <h2>{post.blogTitle}</h2>
                             <h5 className='postedBy'>posted on {post.postedOn} by {post.author}</h5>
                             <p>{post.blogText.slice(0, 250)}...</p>
-                            <Link style={{ textDecoration: 'none' }} to={`/post/${post.id}`}>read more</Link>
+                            <Link style={{ textDecoration: 'none' }} to={`/post/${post.slug}`}>read more</Link>
                         </div>
                     </Card>
                 )

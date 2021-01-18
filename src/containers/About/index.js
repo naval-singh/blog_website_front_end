@@ -1,8 +1,7 @@
 import React from 'react';
 import Card from '../../components/UI/Card';
-import Sidebar from '../../components/Sidebar';
-import './style.css';
 import Layout from '../../components/Layout';
+import './style.css';
 
 /**
 * @author
@@ -11,7 +10,7 @@ import Layout from '../../components/Layout';
 
 const About = (props) => {
     return (
-        <Layout>
+        <Layout sidebar>
             <div style={{ width: '70%' }}>
                 <Card>
                     <div className='aboutContent'>

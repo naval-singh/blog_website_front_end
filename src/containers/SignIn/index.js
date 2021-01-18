@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Layout from '../../components/Layout';
 
 /**
 * @author
@@ -7,9 +8,10 @@ import React from 'react'
 
 const SignIn = (props) => {
     return (
-        <div>SignIn</div>
+        <Layout>
+            <h3>SignIn</h3>
+        </Layout>
     )
-
 }
 
-export default SignIn
+export default SignIn;
