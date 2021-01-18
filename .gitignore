@@ -1,8 +1,4 @@
 # dependencies & other
 
 /node_modules
-
-.eslintcache
-
-debug.log
 package-lock.json
